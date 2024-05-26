@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.main {
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    margin: 10% auto;
+    box-shadow: 0px 0px 22px -2px grey;
+    border-radius: 5px;
+    background-color: #fff;
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p, input {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 0 10px;
+}
+
+#number {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #504f4f;
+    border-radius: 5px;
+}
+
+#number:focus {
+    border: 2px solid rgb(56, 107, 218);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    font-size: 1.5rem;
+    background-color: rgb(56, 107, 218);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+
+button:hover {
+    background-color: rgb(81, 122, 211);
+}
+
+#pass {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+
+    #number {
+        width: 80px;
+    }
+
+    #pass {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p, input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    #number {
+        width: 70px;
+    }
+
+    #pass {
+        font-size: 0.9rem;
+    }
+}
+
